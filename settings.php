@@ -28,7 +28,8 @@ defined('MOODLE_INTERNAL') || die();
 if ($hassiteconfig) {
     $settings = new admin_settingpage('tool_publicfiles', get_string('publicfiles', 'tool_publicfiles'));
 
-    $settings->add(new admin_setting_configstoredfile('tool_publicfiles/files',
+    $settings->add(new admin_setting_configstoredfile(
+        'tool_publicfiles/files',
         get_string('publicfiles', 'tool_publicfiles'),
         get_string('publicfiles_desc', 'tool_publicfiles'),
         'files',
@@ -36,7 +37,9 @@ if ($hassiteconfig) {
         [
             'maxfiles' => -1,
             'accepted_types' => '*',
-        ]));
+        ]
+        )
+    );
 
     // Preview table of public URLs.
     $settings->add(new admin_setting_heading(
