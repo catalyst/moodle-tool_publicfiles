@@ -23,4 +23,4 @@ $plugin->version = 2025121700;
 $plugin->requires = 2021051700; // Moodle 3.11+
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->release = '0.1';
-$plugin->supported = [403, 405];
+$plugin->supported = [405, 405];
