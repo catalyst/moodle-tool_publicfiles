@@ -31,7 +31,6 @@ namespace tool_publicfiles;
  * @package tool_publicfiles
  */
 class files_table {
-
     /**
      * Shows a table of files
      */

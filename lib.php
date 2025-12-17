@@ -37,16 +37,7 @@
  * @param bool $forcedownload Whether or not force download.
  * @param array $options Additional options affecting the file serving.
  */
-function tool_publicfiles_pluginfile(
-    $course,
-    $cm,
-    $context,
-    $filearea,
-    $args,
-    $forcedownload,
-    array $options = []
-    ) {
-
+function tool_publicfiles_pluginfile($course, $cm, $context, $filearea, $args, $forcedownload, array $options = []) {
     // Only system context is valid.
     if ($context->contextlevel !== CONTEXT_SYSTEM) {
         return false;
@@ -58,7 +49,7 @@ function tool_publicfiles_pluginfile(
 
     $fs = get_file_storage();
     $filename = array_pop($args);
-    $file = $fs->get_file($context->id, 'tool_publicfiles',  'files', 0, '/', $filename);
+    $file = $fs->get_file($context->id, 'tool_publicfiles', 'files', 0, '/', $filename);
 
     if (!$file || $file->is_directory()) {
         return false;
@@ -71,6 +62,5 @@ function tool_publicfiles_pluginfile(
     $options['expires'] = time() + $lifetime;
     $options['immutable'] = true;
 
-    send_stored_file($file, $lifetime, 0, false, $options );
+    send_stored_file($file, $lifetime, 0, false, $options);
 }
-
