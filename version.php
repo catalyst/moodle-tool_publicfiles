@@ -13,14 +13,21 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
-// admin/tool/publicfiles/version.php
+
+/**
+ * Version.
+ *
+ * @package   tool_publicfiles
+ * @author    Brendan Heywood <brendan@catalyst-au.net>
+ * @copyright 2025, Catalyst IT
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 defined('MOODLE_INTERNAL') || die();
 
-
 $plugin->component = 'tool_publicfiles';
 $plugin->version = 2025121700;
-$plugin->requires = 2021051700; // Moodle 3.11+
-$plugin->maturity = MATURITY_ALPHA;
-$plugin->release = '0.1';
+$plugin->release = 2025121700;
+$plugin->requires = 2024100700;
+$plugin->maturity = MATURITY_MATURE;
 $plugin->supported = [405, 405];

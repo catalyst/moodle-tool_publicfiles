@@ -13,11 +13,30 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
-// admin/tool/publicfiles/lib.php
 
-defined('MOODLE_INTERNAL') || die();
+/**
+ * Version.
+ *
+ * @package   tool_publicfiles
+ * @author    Brendan Heywood <brendan@catalyst-au.net>
+ * @copyright 2025, Catalyst IT
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
-
+/**
+ * Plugin file
+ *
+ * @package   tool_publicfiles
+ * @category    files
+ *
+ * @param stdClass $course The course object.
+ * @param stdClass $cm The course module object.
+ * @param stdClass $context The mod_subsection's context.
+ * @param string $filearea The name of the file area.
+ * @param array $args Extra arguments (itemid, path).
+ * @param bool $forcedownload Whether or not force download.
+ * @param array $options Additional options affecting the file serving.
+ */
 function tool_publicfiles_pluginfile(
     $course,
     $cm,

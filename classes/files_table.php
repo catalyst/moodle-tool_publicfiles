@@ -14,10 +14,27 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
+/**
+ * Shows a table of files
+ *
+ * @package   tool_publicfiles
+ * @author    Brendan Heywood <brendan@catalyst-au.net>
+ * @copyright 2025, Catalyst IT
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 namespace tool_publicfiles;
 
+/**
+ * Shows a table of files
+ *
+ * @package tool_publicfiles
+ */
 class files_table {
 
+    /**
+     * Shows a table of files
+     */
     public static function render(): string {
         global $CFG;
 

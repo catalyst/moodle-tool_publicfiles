@@ -13,10 +13,17 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
-// admin/tool/publicfiles/lang/en/tool_publicfiles.php
+
+/**
+ * Lang pack
+ *
+ * @package   tool_publicfiles
+ * @author    Brendan Heywood <brendan@catalyst-au.net>
+ * @copyright 2025, Catalyst IT
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 defined('MOODLE_INTERNAL') || die();
-
 
 $string['pluginname'] = 'Public files';
 $string['publicfiles'] = 'Public files';
