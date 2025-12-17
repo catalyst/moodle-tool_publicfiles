@@ -43,7 +43,7 @@ class files_table {
         $files = $fs->get_area_files($context->id, 'tool_publicfiles', 'files', 0, 'filepath, filename', false);
 
         if (empty($files)) {
-            return html_writer::div(get_string('none'), 'alert alert-info');
+            return \html_writer::div(get_string('none'), 'alert alert-info');
         }
 
         $table = new \html_table();
