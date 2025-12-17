@@ -38,8 +38,7 @@ if ($hassiteconfig) {
             'maxfiles' => -1,
             'accepted_types' => '*',
         ]
-        )
-    );
+    ));
 
     // Preview table of public URLs.
     $settings->add(new admin_setting_heading(
