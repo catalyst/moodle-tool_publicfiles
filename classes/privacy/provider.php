@@ -25,12 +25,10 @@
 
 namespace tool_publicfiles\privacy;
 
-use core_privacy\local\metadata\null_provider;
-
 /**
  * Privacy provider for tool_publicfiles.
  */
-class provider extends null_provider {
+class provider implements \core_privacy\local\metadata\null_provider {
     // This plugin does not store any personal data.
 
     /**
