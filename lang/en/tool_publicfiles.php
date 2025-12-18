@@ -26,5 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Public files';
+$string['privacy:metadata'] = 'The Public files plugin does not store any personal data.';
 $string['publicfiles'] = 'Public files';
 $string['publicfiles_desc'] = 'Upload arbitrary files that are served publicly with long cache headers.';
