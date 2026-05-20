@@ -23,12 +23,19 @@
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+use core\setting\root;
+use core\setting\part\page;
+use core\setting\heading;
+use core\setting\core\setting\type\storedfile;
+
 defined('MOODLE_INTERNAL') || die();
 
-if ($hassiteconfig) {
-    $settings = new admin_settingpage('tool_publicfiles', get_string('publicfiles', 'tool_publicfiles'));
+/** @var root $ADMIN */
 
-    $settings->add(new admin_setting_configstoredfile(
+if ($hassiteconfig) {
+    $settings = new page('tool_publicfiles', get_string('publicfiles', 'tool_publicfiles'));
+
+    $settings->add(new storedfile(
         'tool_publicfiles/files',
         get_string('publicfiles', 'tool_publicfiles'),
         get_string('publicfiles_desc', 'tool_publicfiles'),
@@ -41,7 +48,7 @@ if ($hassiteconfig) {
     ));
 
     // Preview table of public URLs.
-    $settings->add(new admin_setting_heading(
+    $settings->add(new heading(
         'tool_publicfiles/previewheading',
         get_string('publicfiles', 'tool_publicfiles'),
         \tool_publicfiles\files_table::render()
