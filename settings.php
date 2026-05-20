@@ -26,7 +26,7 @@
 use core\setting\root;
 use core\setting\part\page;
 use core\setting\heading;
-use core\setting\core\setting\type\storedfile;
+use core\setting\type\storedfile;
 
 defined('MOODLE_INTERNAL') || die();
 
