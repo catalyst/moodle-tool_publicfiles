@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'tool_publicfiles';
-$plugin->version = 2025121700;
-$plugin->release = 2025121700;
+$plugin->version = 2025121701;
+$plugin->release = 2025121701;
 $plugin->requires = 2024100700;
 $plugin->maturity = MATURITY_STABLE;
-$plugin->supported = [405, 405];
+$plugin->supported = [405, 503];
